@@ -7,6 +7,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Forgot from "./pages/Forgot/Forgot";
 import Verify from "./pages/Verify/Verify";
+import Tools from "./pages/Tools/Tools";
 
 import './App.css';
 
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/signup" element={ <SignUp /> } />
           <Route path="/forgot" element={ <Forgot /> } />
           <Route path="/verify" element={ <Verify /> } />
+
+          <Route path="/tools" element={ <Tools /> } />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
