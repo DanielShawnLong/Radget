@@ -24,7 +24,7 @@ const SignIn = () => {
           <div className="SignIn-Box-PasswordHints">
             <CheckBox text="Remember me" />
 
-            <a href="#0">Forgot password?</a>
+            <a href="/forgot">Forgot password?</a>
           </div>
 
           <ButtonGradient xstyle={{ marginBottom: 15 }}>Sign In</ButtonGradient>
@@ -36,7 +36,7 @@ const SignIn = () => {
           <ButtonSignInWith type="Facebook" xstyle={{ marginBottom: 50 }} />
 
           <div className="SignIn-Box-Hint">
-            <p>Dont have an account? <a href="#0">Sign Up</a></p>
+            <p>Dont have an account? <a href="/signup">Sign Up</a></p>
           </div>
         </div>
       </div>

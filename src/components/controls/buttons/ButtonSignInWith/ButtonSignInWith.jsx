@@ -27,7 +27,7 @@ const ButtonSignInWith = ( props ) => {
   return (
     <div className={ `ButtonSignInWith noselect ${ props.className }` } style={ props.xstyle } onClick={ props.onClick }>
       <img className="ButtonSignInWith-Icon" src={ icons[ props.type ] } alt={ props.type } />
-      <p className="ButtonSignInWith-Text">Sign In with { props.type }</p>
+      <p className="ButtonSignInWith-Text">Continue with { props.type }</p>
     </div>
   );
 };

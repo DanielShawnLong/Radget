@@ -1,4 +1,4 @@
-.SignUp {
+.Verify {
   width: 100%;
   height: 100vh;
 
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.SignUp-Box {
+.Verify-Box {
   width: 30rem;
 
   border-radius: 30px;
@@ -26,13 +26,13 @@
   text-align: center;
 }
 
-.SignUp-Box > h1 {
+.Verify-Box > h1 {
   color: rgb(34, 34, 34);
 
   font-size: 1.7rem;
 }
 
-.SignUp-Box > p {
+.Verify-Box > p {
   color: rgba(34, 34, 34, 0.5);
 
   font-size: 0.9rem;
@@ -41,11 +41,11 @@
   margin-top: 0.5rem;
 }
 
-.SignUp-Box-Inputs {
+.Verify-Box-Inputs {
   margin: 3rem 2rem 0rem 2rem; 
 }
 
-.SignUp-Box-PasswordHints {
+.Verify-Box-PasswordHints {
   margin-bottom: 1.5rem;
 
   display: flex;
@@ -58,32 +58,32 @@
   align-items: center;
 }
 
-.SignUp-Logo {
+.Verify-Logo {
   width: 4rem;
 
   margin-bottom: 3rem;
 }
 
-.SignUp-Box-Hint > p {
+.Verify-Box-Hint > p {
   font-weight: 500;
   font-size: 0.9rem;
 }
 
-.SignUp-Box-Hint > p > a {
+.Verify-Box-Hint > p > a {
   margin-left: 0.5rem;
 
   color: #CC2546;
 }
 
 @media only screen and (max-width: 600px) {
-  .SignUp {
+  .Verify {
     justify-content: flex-start;
 
     padding-top: 2rem;
     padding-bottom: 4rem;
   }
 
-  .SignUp-Box {
+  .Verify-Box {
     width: 90vw;
   }
 }
