@@ -1,0 +1,35 @@
+/*
+ * Copyright (C) 2023 Radget. 
+ * All rights reserved.
+ * 
+ * Author: Daniel-Shawn Long
+ * Company: Hexocom
+ * Website: https://hexocom.io/
+ */
+
+.ButtonBordered {
+  border: 1px solid rgb(34, 34, 34, 0.4);
+
+  padding: 0.8rem 0;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.ButtonBordered:hover {
+  opacity: 0.7;
+}
+
+.ButtonBordered-Text {
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: rgb(34, 34, 34);
+
+  opacity: 0.7;
+}

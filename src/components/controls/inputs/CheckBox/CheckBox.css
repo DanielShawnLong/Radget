@@ -1,0 +1,49 @@
+.CheckBox {
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.CheckBox > p {
+  color: rgba(34, 34, 34);
+
+  font-weight: 600;
+  font-size: 0.85rem;
+
+  margin-left: 0.5rem;
+}
+
+.CheckBox-Box {
+  width: 1rem;
+  height: 1rem;
+
+  background: white;
+
+  box-shadow: 0px 0px 2px 0px rgba(34, 34, 34, 0.3);
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-size: 0.8rem;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 1px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.CheckBox-Box-Checked {
+  transition: all 0.2s ease-in-out;
+
+  background: linear-gradient(135deg, #CC2546 0%, #BF1499 100%);
+}

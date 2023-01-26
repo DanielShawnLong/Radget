@@ -1,0 +1,89 @@
+.SignIn {
+  width: 100%;
+  height: 100vh;
+
+  background: whitesmoke;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.SignIn-Box {
+  width: 30rem;
+
+  border-radius: 30px;
+
+  padding: 2rem 0rem;
+
+  background: white;
+
+  box-shadow: 0px 0px 7px 0px rgba(34, 34, 34, 0.1);
+
+  text-align: center;
+}
+
+.SignIn-Box > h1 {
+  color: rgb(34, 34, 34);
+
+  font-size: 1.7rem;
+}
+
+.SignIn-Box > p {
+  color: rgba(34, 34, 34, 0.5);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  margin-top: 0.5rem;
+}
+
+.SignIn-Box-Inputs {
+  margin: 3rem 2rem 0rem 2rem; 
+}
+
+.SignIn-Box-PasswordHints {
+  margin-bottom: 1.5rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+}
+
+.SignIn-Logo {
+  width: 4rem;
+
+  margin-bottom: 3rem;
+}
+
+.SignIn-Box-Hint > p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.SignIn-Box-Hint > p > a {
+  margin-left: 0.5rem;
+
+  color: #CC2546;
+}
+
+@media only screen and (max-width: 600px) {
+  .SignIn {
+    justify-content: flex-start;
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .SignIn-Box {
+    width: 90vw;
+  }
+}
