@@ -1,0 +1,63 @@
+.ToolsCard {
+  width: 25rem;
+  height: 15rem;
+
+  box-shadow: 0px 0px 2px 0px rgba(34, 34, 34, 0.3);
+
+  border-radius: 15px;
+
+  margin: 1rem;
+
+  background: linear-gradient(135deg, #CC2546 0%, #BF1499 100%);
+  box-shadow: 0px 3px 7px 0px #CC254644;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  position: relative;
+}
+
+.ToolsCard > h1,
+.ToolsCard > p {
+  position: absolute;
+
+  left: 0.8rem;
+
+  color: white;
+}
+
+.ToolsCard > h1 {
+  top: 0.5rem;
+
+  font-size: 1.3rem;
+}
+
+.ToolsCard > p {
+  top: 2.2rem;
+
+  font-size: 0.8rem;
+
+  opacity: 0.8;
+}
+
+.ToolsCard > img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+}
+
+.ToolsCard:hover {
+  opacity: 0.7;
+}
+
+.ToolsCard-Loading {
+  transform: scale(0.98);
+  opacity: 0.2;
+}
+
+.ToolsCard-Loading:hover {
+  transform: scale(0.98) !important;
+  opacity: 0.2 !important;
+}

@@ -8,6 +8,8 @@ import SignUp from "./pages/SignUp/SignUp";
 import Forgot from "./pages/Forgot/Forgot";
 import Verify from "./pages/Verify/Verify";
 import Tools from "./pages/Tools/Tools";
+import Plans from "./pages/Plans/Plans";
+import Profile from "./pages/Profile/Profile";
 
 import './App.css';
 
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/verify" element={ <Verify /> } />
 
           <Route path="/tools" element={ <Tools /> } />
+          <Route path="/plans" element={ <Plans /> } />
+          <Route path="/profile" element={ <Profile /> } />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

@@ -1,3 +1,69 @@
 .Tools {
-  
+  width: 76rem;
+
+  padding-top: 3rem;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Tools-Title {
+  font-size: 1.7rem;
+
+  margin-bottom: 0.2rem;
+}
+
+.Tools-Caption {
+  font-size: 0.9rem;
+
+  opacity: 0.5;
+}
+
+.Tools-Filter-Box {
+  width: 18rem;
+  height: 35rem;
+
+  margin-top: 1rem;
+  margin-right: 2rem;
+
+  overflow-y: scroll;
+
+  padding: 1rem;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 2px 0px rgba(34, 34, 34, 0.3);
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.Tools-Filter-Box::-webkit-scrollbar {
+  display: none;
+}
+
+.Tools-List {
+  width: 100%;
+}
+
+.Tools-List-Grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-left: -1rem;
+  margin-right: 1rem;
+}
+
+.Tools-Category {
+  margin-bottom: 1.5rem;
 }

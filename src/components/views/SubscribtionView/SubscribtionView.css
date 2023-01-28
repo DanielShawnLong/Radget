@@ -1,0 +1,65 @@
+.SubscribtionView {
+  
+}
+
+.SubscribtionView-Grid {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.SubscribtionView-Grid-Item {
+  width: 13rem;
+
+  box-shadow: 0px 0px 4px 0px rgba(34, 34, 34, 0.2);
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 1.5rem 2rem;
+  margin-right: 1rem;
+}
+
+.SubscribtionView-Grid-Item-Icon {
+  width: fit-content;
+
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.SubscribtionView-Grid-Item > h1 {
+  font-size: 1.5rem;
+}
+
+.SubscribtionView-Grid-Item > p {
+  font-size:0.9rem;
+  font-weight: 500;
+
+  opacity: 0.5;
+
+  margin-bottom: 2rem;
+}
+
+.SubscribtionView-Grid-Item > h2 {
+  font-size: 2rem;
+
+  background: -webkit-linear-gradient(#CC2546, #BF1499);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SubscribtionView-Grid-Item-Advantage {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+}
+
+.SubscribtionView-Grid-Item-Advantage > p {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin-left: 0.5rem;
+}

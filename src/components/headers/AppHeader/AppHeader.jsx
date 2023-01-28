@@ -2,11 +2,11 @@ import React from "react";
 
 import { useNavigate } from "react-router";
 
-import { Category2, Cup, Logout, User } from "iconsax-react";
+import { Category2, Cup, Diagram, Information, Logout, User } from "iconsax-react";
 
 import './AppHeader.css';
 
-const AppHeader = () => {
+const AppHeader = ( props ) => {
   const navigate = useNavigate();
 
   return (
@@ -18,19 +18,54 @@ const AppHeader = () => {
       </div>
 
       <div className="AppHeader-Tabs">
-        <div className="AppHeader-Tab-Active">
-          <Category2 variant="Broken" size={ 18 } color="#FFF" />
+        <div
+          className={ props.tab === 0 ? "AppHeader-Tab-Active" : "AppHeader-Tab" }
+          onClick={ () => navigate("/tools") }
+        >
+          <Category2
+            variant="Broken"
+            size={ 17 }
+            color={ props.tab === 0 ? "#FFF" : "#222222CC" }
+          />
           <p>Tools</p>
         </div>
 
-        <div className="AppHeader-Tab">
-          <Cup variant="Broken" size={ 18 } color="#222222CC" />
-          <p>Plans</p>
+        <div
+          className={ props.tab === 1 ? "AppHeader-Tab-Active" : "AppHeader-Tab" }
+          onClick={ () => null }
+          style={{ opacity: 0.5 }}
+        >
+          <h1>Coming Soon!</h1>
+          <Diagram
+            variant="Broken"
+            size={ 17 }
+            color={ props.tab === 1 ? "#FFF" : "#222222CC" }
+          />
+          <p>Analytics</p>
         </div>
 
-        <div className="AppHeader-Tab">
-          <User variant="Broken" size={ 18 } color="#222222CC" />
+        <div
+          className={ props.tab === 2 ? "AppHeader-Tab-Active" : "AppHeader-Tab" }
+          onClick={ () => navigate("/profile") }
+        >
+          <User
+            variant="Broken"
+            size={ 17 }
+            color={ props.tab === 2 ? "#FFF" : "#222222CC" }
+          />
           <p>My Profile</p>
+        </div>
+
+        <div
+          className={ props.tab === 3 ? "AppHeader-Tab-Active" : "AppHeader-Tab" }
+          onClick={ () => navigate("/about") }
+        >
+          <Information
+            variant="Broken"
+            size={ 17 }
+            color={ props.tab === 3 ? "#FFF" : "#222222CC" }
+          />
+          <p>About</p>
         </div>
       </div>
 

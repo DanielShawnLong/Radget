@@ -1,0 +1,58 @@
+.ToolsCategory {
+  margin-bottom: 1.2rem;
+}
+
+.ToolsCategory > p {
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  margin-bottom: 1rem;
+}
+
+.ToolsCategory-Item {
+  background: whitesmoke;
+
+  box-shadow: 0px 0px 2px 0px rgba(34, 34, 34, 0.3);
+
+  border-radius: 10px;
+
+  margin-bottom: 0.7rem;
+  padding: 0.8rem 1rem;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+
+  position: relative;
+}
+
+.ToolsCategory-Item > p {
+  margin-left: 0.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.ToolsCategory-Item:hover {
+  opacity: 0.5;
+}
+
+.ToolsCategory-Item-Active {
+  width: 0.7rem;
+  height: 0.7rem;
+
+  border-radius: 100%;
+
+  background: linear-gradient(135deg, #CC2546 0%, #BF1499 100%);
+
+  position: absolute;
+
+  right: 1rem;
+}

@@ -6,9 +6,11 @@ import './AppView.css';
 const AppView = ( props ) => {
   return (
     <div className="AppView">
-      <AppHeader />
+      <AppHeader tab={ props.tab } />
 
-      { props.children }
+      <div className="AppView-Inner">
+        { props.children }
+      </div>
     </div>
   );
 }
