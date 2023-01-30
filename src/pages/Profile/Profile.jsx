@@ -1,19 +1,19 @@
 import React from "react";
 
-import { Card, Cup, User } from "iconsax-react";
+import { Card, Coin1, Cup, User } from "iconsax-react";
 
 import ButtonCategory from "../../components/controls/buttons/ButtonCategory/ButtonCategory";
 import AccountView from "../../components/views/AccountView/AccountView";
 
 import AppView from "../../components/views/AppView/AppView";
+import CreditsView from "../../components/views/CreditsView/CreditsView";
 import BillingView from "../../components/views/BillingView/BillingView";
-import SubscribtionView from "../../components/views/SubscribtionView/SubscribtionView";
 
 import './Profile.css';
 
 const categories = [
   { id: 0, icon: <User size="18" color="#222222" />, title: "Account", caption: "Edit personal information or change your password", view: <AccountView /> },
-  { id: 1, icon: <Cup size="18" color="#222222" />, title: "Subscribtion", caption: "See or change your current plan you have subscribed", view: <SubscribtionView /> },
+  { id: 1, icon: <Coin1 size="18" color="#222222" />, title: "Credits", caption: "Buy or manage credits for your account", view: <CreditsView /> },
   { id: 2, icon: <Card size="18" color="#222222" />, title: "Billing", caption: "Download your bills and see upcoming payments", view: <BillingView /> }
 ];
 

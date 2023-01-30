@@ -4,8 +4,6 @@
   background: white;
 
   display: flex;
-
-  justify-content: space-between;
   align-items: center;
 
   padding: 0 7rem;
@@ -25,18 +23,43 @@
   transform: scale(0.95);
 }
 
-.AppHeader-Welcome {
+.AppHeader-Credits {
   position: absolute;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: center;
 
   top: 1rem;
   right: 1.5rem;
+
+  background: linear-gradient(135deg, #38AEAEDE 0%, #28C297DE 100%);
+
+  border-radius: 5px;
+
+  padding: 2px 6px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
 }
 
-.AppHeader-Welcome > p {
-  font-weight: 600;
+.AppHeader-Credits:hover {
+  transform: scale(1.05);
+
+  opacity: 0.7;
+}
+
+.AppHeader-Credits > p {
+  font-weight: 800;
   font-size: 0.8rem;
 
-  color: rgb(34, 34, 34);
+  margin-right: 0.2rem;
+
+  color: #fff;
 }
 
 .AppHeader-Tabs {
@@ -48,6 +71,8 @@
   flex-wrap: nowrap;
 
   align-items: flex-end;
+
+  margin: 0 auto;
 }
 
 .AppHeader-Tab,
@@ -91,7 +116,7 @@
 }
 
 .AppHeader-Tab > p {
-  color: #222222CC;
+  color: #22222277;
 }
 
 .AppHeader-Tab > p,
@@ -114,11 +139,84 @@
   color: white;
 }
 
-.AppHeader-Tab-SignOut {
-  background: rgba(189, 60, 103, 0.92);
-  background: linear-gradient(135deg, rgba(170, 51, 90, 0.92) 0%, rgba(189, 60, 103, 0.92) 100%);
+.AppHeader-SignOut {
+  position: absolute;
+
+  background: linear-gradient(135deg, #CC3C6BDE 0%, #D94444DE 100%);
+
+  border-radius: 5px;
+
+  padding: 2px 6px;
+
+  top: 3.5rem;
+  right: 1.5rem;
+
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
 }
 
-.AppHeader-Tab-SignOut > p {
-  color: white
+.AppHeader-SignOut:hover {
+  opacity: 0.5;
+}
+
+.AppHeader-SignOut > p {
+  font-weight: 800;
+  font-size: 0.8rem;
+
+  margin-left: 0.3rem;
+
+  color: white;
+}
+
+@media only screen and (max-width: 1250px) {
+  .AppHeader {
+    padding: 0 2rem;
+  }
+
+  .AppHeader-Tab,
+  .AppHeader-Tab-Active {
+    width: fit-content;
+
+    align-self: center;
+
+    border-radius: 10px;
+
+    padding: 1rem;
+  }
+
+  .AppHeader-Tab > h1  {
+    font-size: 0.6rem;
+
+    top: -0.9rem;
+  }
+
+  .AppHeader-Tab:hover {
+    padding: 1rem;
+  
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .AppHeader-Tabs {
+    margin: 0 0 0 2rem;
+  }
+  
+  .AppHeader-Tab > p,
+  .AppHeader-Tab-Active > p {
+    display: none;
+  }
+
+  .AppHeader-Tab > h1  {
+    display: none;
+  }
 }

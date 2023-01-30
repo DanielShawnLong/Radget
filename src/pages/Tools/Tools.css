@@ -25,7 +25,7 @@
 
 .Tools-Filter-Box {
   width: 18rem;
-  height: 35rem;
+  height: 20rem;
 
   margin-top: 1rem;
   margin-right: 2rem;
@@ -66,4 +66,32 @@
 
 .Tools-Category {
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Tools {
+    width: fit-content;
+
+    margin: 0 auto;
+  }
+
+  .Tools-List-Grid {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Tools {
+    display: block;
+
+    width: 90vw;
+
+    padding-top: 0.7rem;
+  }
+
+  .Tools-Filter-Box {
+    width: calc(100% - 2rem);
+
+    margin-bottom: 2rem;
+  }
 }

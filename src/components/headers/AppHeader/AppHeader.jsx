@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router";
 
-import { Category2, Cup, Diagram, Information, Logout, User } from "iconsax-react";
+import { Category2, Coin, Cup, Diagram, Information, Logout, User } from "iconsax-react";
 
 import './AppHeader.css';
 
@@ -13,8 +13,15 @@ const AppHeader = ( props ) => {
     <div className="AppHeader">
       <img className="AppHeader-Logo" src={ `${ process.env.PUBLIC_URL }/logo512.png` } alt="Logo" />
 
-      <div className="AppHeader-Welcome">
-        <p>Welcome, Daniel-Shawn Long</p>
+      <div className="AppHeader-Credits">
+        <p>Current credits: 1000</p>
+
+        <Coin variant="Linear" size={ 13 } color="#FFF" />
+      </div>
+
+      <div className="AppHeader-SignOut" onClick={ () => navigate("/signin") }>
+      <Logout variant="Linear" size={ 13 } color="#FFF" />
+        <p>Sign Out</p>
       </div>
 
       <div className="AppHeader-Tabs">
@@ -23,9 +30,9 @@ const AppHeader = ( props ) => {
           onClick={ () => navigate("/tools") }
         >
           <Category2
-            variant="Broken"
-            size={ 17 }
-            color={ props.tab === 0 ? "#FFF" : "#222222CC" }
+            variant="Bold"
+            size={ 16 }
+            color={ props.tab === 0 ? "#FFF" : "#22222277" }
           />
           <p>Tools</p>
         </div>
@@ -37,9 +44,9 @@ const AppHeader = ( props ) => {
         >
           <h1>Coming Soon!</h1>
           <Diagram
-            variant="Broken"
-            size={ 17 }
-            color={ props.tab === 1 ? "#FFF" : "#222222CC" }
+            variant="Bold"
+            size={ 16 }
+            color={ props.tab === 1 ? "#FFF" : "#22222277" }
           />
           <p>Analytics</p>
         </div>
@@ -49,9 +56,9 @@ const AppHeader = ( props ) => {
           onClick={ () => navigate("/profile") }
         >
           <User
-            variant="Broken"
-            size={ 17 }
-            color={ props.tab === 2 ? "#FFF" : "#222222CC" }
+            variant="Bold"
+            size={ 16 }
+            color={ props.tab === 2 ? "#FFF" : "#22222277" }
           />
           <p>My Profile</p>
         </div>
@@ -61,18 +68,11 @@ const AppHeader = ( props ) => {
           onClick={ () => navigate("/about") }
         >
           <Information
-            variant="Broken"
-            size={ 17 }
-            color={ props.tab === 3 ? "#FFF" : "#222222CC" }
+            variant="Bold"
+            size={ 16 }
+            color={ props.tab === 3 ? "#FFF" : "#22222277" }
           />
           <p>About</p>
-        </div>
-      </div>
-
-      <div className="AppHeader-Tabs" onClick={ () => navigate("/signin") }>
-        <div className="AppHeader-Tab AppHeader-Tab-SignOut">
-          <Logout variant="Broken" size={ 18 } color="#fff" />
-          <p>Sign Out</p>
         </div>
       </div>
     </div>

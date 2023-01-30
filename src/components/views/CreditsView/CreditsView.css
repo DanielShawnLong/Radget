@@ -1,0 +1,178 @@
+.CreditsView {
+  
+}
+
+.CreditsView-Balance-View {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#Balance-Current {
+  background: linear-gradient(135deg, #CC2546 0%, #BF1499 100%);
+}
+
+#Balance-Used {
+  background: linear-gradient(135deg, #25A5CC 0%, #1487BF 100%);
+}
+
+.CreditsView-Balance {
+  width: fit-content;
+
+  padding: 1.5rem 2rem;
+  margin-right: 1rem;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: white;
+}
+
+.CreditsView-Balance-Text {
+  margin-right: 2rem;
+}
+
+.CreditsView-Balance-Text > p {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.CreditsView-Add {
+  margin-top: 2rem;
+}
+
+.CreditsView-Add > p {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.CreditsView-Add-Amounts {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+
+  padding-top: 1rem;
+}
+
+.CreditsView-Add-Amount {
+  padding: 0.5rem 1rem;
+
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  margin-right: 0.5rem;
+}
+
+.CreditsView-Add-Amount > h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.CreditsView-Add-Amount:hover {
+  opacity: 0.5;
+}
+
+.CreditsView-Add-Amount-Active {
+  border: 1px solid #CC2546AA;
+
+  background-color: #CC254611;
+}
+
+.CreditsView-Add-Amount-Active:hover {
+  opacity: 1;
+}
+
+.CreditsView-Submit {
+  width: 12rem;
+
+  margin-top: 1rem;
+}
+
+.CreditsView-Overview {
+  width: 20rem;
+
+  margin-top: 1rem;
+
+  background: rgba(230, 230, 230, 0.5);
+
+  padding: 1.2rem 1.5rem;
+
+  border-radius: 15px;
+}
+
+.CreditsView-Overview-Row,
+.CreditsView-Overview-Row-Total {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #DDDDDD;
+
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.CreditsView-Overview-Row > p {
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  opacity: 0.8;
+}
+
+.CreditsView-Overview-Row > h1 {
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  opacity: 0.8;
+}
+
+.CreditsView-Overview-Row-Total > div {
+  text-align: right;
+}
+
+.CreditsView-Overview-Row-Total > div > h1 {
+  font-size: 1.3rem;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+}
+
+.CreditsView-Overview-Row-Total > div > p {
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  opacity: 0.5;
+}
+
+.CreditsView-Overview-Payments > p {
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  opacity: 0.5;
+
+  margin-bottom: 10px;
+}
+
+.CreditsView-Overview-Payments > img {
+  width: 100%;
+}

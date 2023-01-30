@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Signpost } from "iconsax-react";
+import { Book1, Signpost } from "iconsax-react";
 
 import TextInput from "../../components/controls/inputs/TextInput/TextInput";
 import ToolsCategory from "../../components/tools/ToolsCategory/ToolsCategory";
@@ -12,15 +12,9 @@ import './Tools.css';
 
 const tools = [
   {
-    category: "Social Media",
-    tools: [
-      { id: 0, icon: <Signpost size="18" color="#222222" />, title: "Posting & Blogging", caption: "Messaging, writing mails or generating text for a post" }
-    ]
-  },
-  {
     category: "Marketing",
     tools: [
-      { id: 1, icon: <Signpost size="18" color="#222222" />, title: "Advertisement", caption: "Messaging, writing mails or generating text for a post" }
+      { id: 0, icon: <Book1 size="18" color="#222222" />, title: "Advertisement", caption: "Several marketing tools to let your business grow more easily" }
     ]
   }
 ];
@@ -28,24 +22,10 @@ const tools = [
 const cards = {
   0: [
     { 
-      title: "Generating Post Text",
-      caption: "Generate a text for any post on social media.",
-      img: `${ process.env.PUBLIC_URL }/assets/images/tools/posting-blogging.png`,
-      href: "/tools/0"
-    },
-    { 
-      title: "Generating Post Text 2",
-      caption: "Generate a text for any post on social media.",
-      img: `${ process.env.PUBLIC_URL }/assets/images/tools/posting-blogging.png`,
-      href: "/tools/1"
-    }
-  ],
-  1: [
-    { 
-      title: "Andere Tools",
-      caption: "Generate a text for any post on social media.",
-      img: `${ process.env.PUBLIC_URL }/assets/images/tools/posting-blogging.png`,
-      href: "/tools/3"
+      title: "Advertising Text",
+      caption: "Create an impressive advertising text for your audience",
+      img: `${ process.env.PUBLIC_URL }/assets/images/tools/text.png`,
+      href: "/tools/advertisement-text"
     }
   ]
 }
@@ -64,7 +44,9 @@ const Tools = () => {
           <h1 className="Tools-Title">Categories</h1>
           <p className="Tools-Caption">Choose a category of a tool collection</p>
           <div className="Tools-Filter-Box">
+            {/*
             <TextInput placeholder="Search" type="text" icon="search" xstyle={{ marginBottom: 20 }} />
+            */}
 
             {
               tools.map((element, index) => (

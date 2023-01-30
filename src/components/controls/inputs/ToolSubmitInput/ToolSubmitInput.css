@@ -1,0 +1,31 @@
+.ToolSubmitInput {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin-top: 2rem;
+}
+
+.ToolSubmitInput-Button {
+  width: 10rem;
+
+  margin-right: 1.5rem;
+}
+
+.ToolSubmitInput-Text {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.ToolSubmitInput-Text > p {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  margin-left: 0.4rem;
+}

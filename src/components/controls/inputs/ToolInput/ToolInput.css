@@ -1,0 +1,52 @@
+/*
+ * Copyright (C) 2023 Radget. 
+ * All rights reserved.
+ * 
+ * Author: Daniel-Shawn Long
+ * Company: Hexocom
+ * Website: https://hexocom.io/
+ */
+
+.ToolInput > h1 {
+  font-size: 1.4rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.ToolInput > input,
+.ToolInput > textarea {
+  width: calc(100% - 20px);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  box-shadow: 0px 0px 2px 0px rgba(34, 34, 34, 0.3);
+
+  border: 0;
+  border-radius: 7px;
+
+  background: white;
+
+  padding: 7px 10px;
+
+  resize: none;
+}
+
+.ToolInput-Hints {
+  display: flex;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ToolInput-Hints > p {
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  opacity: 0.4;
+
+  margin-top: 0.3rem;
+}

@@ -25,7 +25,7 @@
 .AccountView > h3 {
   font-size: 1rem;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .AccountView-Password {
@@ -44,5 +44,5 @@
 .AccountView-Apply {
   width: 14rem;
 
-  margin-top: 3rem;
+  margin-top: 2rem;
 }

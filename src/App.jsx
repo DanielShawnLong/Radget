@@ -11,6 +11,8 @@ import Tools from "./pages/Tools/Tools";
 import Plans from "./pages/Plans/Plans";
 import Profile from "./pages/Profile/Profile";
 
+import ToolsView from "./components/views/ToolsView/ToolsView";
+
 import './App.css';
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
           <Route path="/tools" element={ <Tools /> } />
           <Route path="/plans" element={ <Plans /> } />
           <Route path="/profile" element={ <Profile /> } />
+
+          <Route path="/tools/:tool" element={ <ToolsView /> } />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
