@@ -5,9 +5,16 @@ import { useNavigate } from "react-router";
 import { Category2, Coin, Cup, Diagram, Information, Logout, User } from "iconsax-react";
 
 import './AppHeader.css';
+import { Auth } from "aws-amplify";
 
 const AppHeader = ( props ) => {
   const navigate = useNavigate();
+
+  const signOut = async () => {
+    await Auth.signOut();
+
+    navigate("/");
+  };
 
   return (
     <div className="AppHeader">
@@ -19,7 +26,7 @@ const AppHeader = ( props ) => {
         <Coin variant="Linear" size={ 13 } color="#FFF" />
       </div>
 
-      <div className="AppHeader-SignOut" onClick={ () => navigate("/signin") }>
+      <div className="AppHeader-SignOut" onClick={ signOut }>
       <Logout variant="Linear" size={ 13 } color="#FFF" />
         <p>Sign Out</p>
       </div>

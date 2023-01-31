@@ -1,0 +1,14 @@
+.ErrorCard {
+  width: auto;
+
+  border-radius: 7px;
+
+  padding: 1.2rem 0;
+}
+
+.ErrorCard > p {
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  color: #EC324C;
+}

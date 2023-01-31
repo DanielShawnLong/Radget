@@ -26,6 +26,16 @@
   text-align: center;
 }
 
+.SignIn-Box-Failed {
+  color: #EC324C;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .SignIn-Box > h1 {
   color: rgb(34, 34, 34);
 

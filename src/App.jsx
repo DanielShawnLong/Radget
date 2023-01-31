@@ -2,6 +2,8 @@ import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { Auth, Hub } from "aws-amplify";
+
 import Loading from "./pages/Loading/Loading";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
@@ -16,6 +18,33 @@ import ToolsView from "./components/views/ToolsView/ToolsView";
 import './App.css';
 
 const App = () => {
+  const [user, setUser] = React.useState(null);
+  const [customState, setCustomState] = React.useState(null);
+
+  React.useEffect(() => {
+    const unsubscribe = Hub.listen("auth", ({ payload: { event, data } }) => {
+      switch (event) {
+        case "signIn":
+          setUser(data);
+          break;
+        case "signOut":
+          setUser(null);
+          break;
+        case "customOAuthState":
+          setCustomState(data);
+          break;
+        default:
+          break;
+      }
+    });
+
+    Auth.currentAuthenticatedUser()
+      .then(currentUser => setUser(currentUser))
+      .catch(() => console.log("Not signed in"));
+
+    return unsubscribe;
+  }, []);
+
   return (
     <React.StrictMode>
       <BrowserRouter>

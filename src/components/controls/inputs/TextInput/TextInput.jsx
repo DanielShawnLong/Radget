@@ -14,7 +14,7 @@ const TextInput = ( props ) => {
 
   return (
     <div className={ `TextInput ${ props.className }` } style={ props.xstyle }>
-      <input className="TextInput-Input" type={ props.type } required />
+      <input className="TextInput-Input" type={ props.type } ref={ props.xref } required />
       <span className="TextInput-Placeholder">{ props.placeholder }</span>
 
       <div className="TextInput-Icon">

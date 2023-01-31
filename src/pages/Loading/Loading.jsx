@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Auth } from "aws-amplify";
+
 import { useNavigate } from "react-router";
 
 import './Loading.css';
@@ -8,7 +10,12 @@ const Loading = () => {
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    setTimeout(() => navigate("/signin"), 1500);
+    Auth.currentAuthenticatedUser()
+      .then((user) => {
+        setTimeout(() => navigate("/tools"), 1500);
+      })
+      .then((data) => console.log(data))
+      .catch((err) => setTimeout(() => navigate("/signin"), 1500));
   });
 
   return (

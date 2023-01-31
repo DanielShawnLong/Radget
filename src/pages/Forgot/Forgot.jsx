@@ -1,11 +1,23 @@
 import React from "react";
 
+import { useNavigate } from "react-router";
+
+import { Auth } from "aws-amplify";
+
 import ButtonGradient from "../../components/controls/buttons/ButtonGradient/ButtonGradient";
 import TextInput from "../../components/controls/inputs/TextInput/TextInput";
 
 import './Forgot.css';
 
 const Forgot = () => {
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    Auth.currentAuthenticatedUser()
+      .then((user) => navigate("/"))
+      .catch((err) => null);
+  });
+
   return (
     <div className="Forgot">
       <img className="Forgot-Logo" src={ `${ process.env.PUBLIC_URL }/logo512.png` } alt="Logo" />

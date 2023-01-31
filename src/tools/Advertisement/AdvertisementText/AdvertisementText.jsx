@@ -13,9 +13,9 @@ const AdvertisementText = () => {
   return (
     <div className="AdvertisementText">
       <div className="AdvertisementText-Form">
-        <ToolInput title="Description" caption="Please describe what you're really doing in your business" max={ 100 } multiline />
+        <ToolInput title="Description" caption="Please describe what you're really doing in your business" max={ 1000 } multiline />
 
-        <ToolSubmitInput onSubmit={ () => setText("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.") } />
+        <ToolSubmitInput onSubmit={ () => setText("Welcome to our bakery! We specialize in all things eggs. Our egg-focused menu includes everything from quiches to omelettes to scrambled eggs, all made with fresh, locally sourced eggs. Our bakers take pride in creating delicious and unique egg dishes to satisfy any craving. Stop in today and try one of our egg-centric creations. You won't be disappointed!") } />
       </div>
 
       <div className="AdvertisementText-Output">
