@@ -4,4 +4,6 @@
     --color-background-button: #2FBAA2 linear-gradient(90deg, #42BAC6 0%, #59B9F1 100%) repeat scroll 0% 0%;
     --color-background-hover-button: #2FBAA2 linear-gradient(90deg, #61c5ce 0%, #8acbf0 100%) repeat scroll 0% 0%;
     --color-text-copyright: #6a7986;
+
+    --color-blue-copyright: #1661ac;
 }
